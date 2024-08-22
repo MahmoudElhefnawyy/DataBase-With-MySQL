@@ -1,0 +1,34 @@
+CREATE DATABASE `company`;
+
+CREATE table `employee`{
+  employeId int PRIMARY KEY;
+  firstName varchar(50);
+  lastName varchar(50);
+  email var(20);
+  phoneNumber int;
+  hiringDate varchar(20);
+  salary int;
+  commession int;
+  mangerId int;
+  departmentId int;
+};
+
+1-SELECT * FROM employee ORDERED BY firstName DESC;
+
+
+2-SELECT employeId,firstName,lastName,salary FROM employee ORDERD BY salary ASC;
+
+
+3-SELECT * FROM employe WHERE SUM(salary) AND SUM(commession);
+
+
+4-SELECT MAX(salary),MIN(salary) FROM employe;
+
+
+5-SELECT AVG(salary),AVG(employeId) FROM employe;
+
+
+6-SELECT COUNT(empolyeId) FROM employe;
+
+
+7-SELECT * FROM employe LIMIT 10 OFSET 1;

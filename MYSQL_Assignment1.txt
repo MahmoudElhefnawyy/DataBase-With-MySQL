@@ -1,0 +1,21 @@
+CREATE DATABSE `animal`;
+
+CREATE TABLE `cat`{
+ id int PRIMARY KEY;
+ name varchar(50);
+ age int;
+ gender string(20);
+ toy varchar(50);
+}
+
+1-SELECT * FROM cat;
+
+
+2-SELECT * FROM cat WHERE age<5;
+
+
+3-SELECT * FROM cat WHERE toy=`ball`;
+
+
+4-SELECT * FROM cat WHERE toy=`ball` AND age=MAX(age);
+
